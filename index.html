@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>rentCore Backup — резервное копирование на Google Диск</title>
+  <style>body{font:18px/1.65 system-ui,sans-serif;color:#17202a;background:#f5f7fa;margin:0}main{max-width:760px;margin:48px auto;padding:32px;background:white;border-radius:16px}h1{font-size:30px;line-height:1.25}a{color:#1858a8}small{color:#526173}@media(max-width:800px){main{margin:16px;padding:24px}}</style>
+</head>
+<body>
+<main>
+  <p><small>Локальный инструмент владельца системы</small></p>
+  <h1>rentCore Backup</h1>
+  <p>rentCore Backup предназначен для зашифрованного резервного копирования и восстановления rentCore владельцем системы с использованием его Google Диска.</p>
+  <p>Инструмент работает на компьютере Ubuntu и использует Google OAuth и Google Drive API. База SQLite, uploads и выбранные конфигурации шифруются restic до передачи в Google Диск. Для восстановления нужны доступ к репозиторию и отдельно сохранённый пароль restic.</p>
+  <p>Текущее разрешение — <code>https://www.googleapis.com/auth/drive</code>. Оно позволяет управлять всеми файлами Google Диска аккаунта. Работа инструмента ограничена отдельной приватной папкой его локальной конфигурацией; само OAuth-разрешение такой границы не устанавливает.</p>
+  <p>Google Drive API используется для чтения, создания, изменения и удаления объектов зашифрованного репозитория, проверки его целостности и восстановления. Приложение предназначено только для личного использования владельцем.</p>
+  <p><a href="privacy.html">Политика обработки данных</a></p>
+  <p>Контакт по вопросам доступа и обработки данных: <a href="mailto:habrishat@gmail.com">habrishat@gmail.com</a>.</p>
+</main>
+</body>
+</html>
